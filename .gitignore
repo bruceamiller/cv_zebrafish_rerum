@@ -1,0 +1,25 @@
+# Local secrets (tokens, env); add paths as the tool grows
+.env
+*.token
+secrets/
+
+# Offline RERUM-shaped mirror (no network; see RERUM_WRAPPER_PLAN section 2)
+shadow_store/
+local_rerum_mirror/
+scratch/
+
+# GUI: last-used cv_zebrafish clone path (machine-local)
+companion_gui_prefs.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/

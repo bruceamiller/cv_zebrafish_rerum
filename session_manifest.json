@@ -1,0 +1,18 @@
+{
+  "manifest_version": "1",
+  "wrapper_semver": "0.1.0",
+  "session_json_required_keys": [
+    "name",
+    "csvs"
+  ],
+  "session_json_optional_keys": [
+    "csv_folders",
+    "folder_graphs",
+    "last_scene",
+    "calculation_has_run",
+    "last_csv_path",
+    "last_config_path",
+    "csv_import_alias"
+  ],
+  "notes": "Bump wrapper_semver when Session.toDict / load_session_from_json gains or loses top-level keys. Unknown keys in session.json raise a non-fatal warning in the companion CLI."
+}

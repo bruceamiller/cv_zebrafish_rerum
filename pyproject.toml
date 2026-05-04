@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cv-zebrafish-rerum"
+version = "0.2.2"
+description = "Offline-first companion: CV Zebrafish sessions → JSON-LD and local shadow store (RERUM-shaped)."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "CV Zebrafish contributors" }]
+dependencies = []
+
+[project.optional-dependencies]
+gui = ["PyQt5>=5.15"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+cv-zebrafish-rerum = "cv_zebrafish_rerum.cli:main"
+cv-zebrafish-rerum-gui = "cv_zebrafish_rerum.gui_main:run_gui"
+
+[tool.setuptools.packages.find]
+where = ["src"]
